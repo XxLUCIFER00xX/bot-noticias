@@ -9,7 +9,7 @@ ZONA = "America/Mexico_City"   # cambia por tu zona horaria
 MONEDAS = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD"]
 
 # Avisa de eventos que empiezan entre 20 y 40 minutos a partir de ahora
-DESDE_MIN, HASTA_MIN = 20, 40
+DESDE_MIN, HASTA_MIN = 0, 10000.
 
 URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
 eventos = requests.get(URL, timeout=20).json()
